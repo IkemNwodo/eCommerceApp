@@ -23,6 +23,7 @@ import java.util.Objects;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
@@ -63,8 +64,8 @@ public class ItemControllerTest {
         assertNotNull(itemsList);
         assertEquals(200, itemsList.getStatusCodeValue());
         assertEquals("Nivea", Objects.requireNonNull(itemsList.getBody()).get(0).getName());
-        assertEquals(java.util.Optional.of(1L), Objects.requireNonNull(itemsList.getBody()).get(0).getId());
-        assertEquals(java.util.Optional.of(2L), Objects.requireNonNull(itemsList.getBody()).get(1).getId());
+        assertEquals(java.util.Optional.of(1L), java.util.Optional.ofNullable(Objects.requireNonNull(itemsList.getBody()).get(0).getId()));
+        assertEquals(java.util.Optional.of(2L), java.util.Optional.ofNullable(Objects.requireNonNull(itemsList.getBody()).get(1).getId()));
 
     }
 
@@ -80,7 +81,7 @@ public class ItemControllerTest {
     }
     @Test
     public void getItemsByName() {
-        ResponseEntity<List<Item>> ItemByName = itemController.getItemsByName("Pencil");
+        ResponseEntity<List<Item>> ItemByName = itemController.getItemsByName("Nivea");
         assertNotNull(ItemByName);
         assertEquals(200, ItemByName.getStatusCodeValue());
         assertEquals("Nivea", Objects.requireNonNull(ItemByName.getBody().get(0).getName()));

@@ -64,10 +64,11 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.26" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.1.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.auth0:java-jwt:3.18.2" level="project" />
+    <orderEntry type="library" name="Maven: com.auth0:java-jwt:3.10.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-security:2.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.1.5.RELEASE" level="project" />
@@ -136,7 +137,6 @@
     <orderEntry type="library" name="Maven: org.apache.maven:maven-archiver:2.2" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-archiver:1.0-alpha-7" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:1.0.4" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-classworlds:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:catalina:6.0.29" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:juli:6.0.29" level="project" />
